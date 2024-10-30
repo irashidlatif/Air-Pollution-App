@@ -6,7 +6,7 @@ function App() {
   const [loading, setLoading] = useState(false); // For loading state
   const [error, setError] = useState(null); // For error handling
 
-  const apiKey = "e22012acf969a46237037adf10e263ce"; // Replace with your actual API key
+  const apiKey = import.meta.env.VITE_APP_ID; // Replace with your actual API key
 
   // Function to handle search
   const handleSearch = async () => {
